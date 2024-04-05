@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="net8_mauiApp_loginPage.MainPage">
+
+    <ScrollView >
+
+        <HorizontalStackLayout Margin="20">
+            <Rectangle Fill="Red"
+                  HeightRequest="30"
+                  WidthRequest="30" />
+            <Label Text="Red"
+              FontSize="18" />
+        </HorizontalStackLayout>
+
+
+    </ScrollView>
+   
+
+</ContentPage>

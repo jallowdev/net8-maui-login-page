@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="net8_mauiApp_loginPage.mvvm.views.LoginPage"
+             Title="Login">
+    <ScrollView>
+
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="220"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <BoxView 
+                BackgroundColor="Aqua"
+                CornerRadius="50,50,50,50"
+                HeightRequest="200"
+                WidthRequest="400"
+                />
+            
+            <VerticalStackLayout>
+
+                <Frame BackgroundColor="SkyBlue" HeightRequest="60" WidthRequest="60" CornerRadius="30" Margin="0,100,0,0" >
+                    <Image Source="https://www.findool.com/images/Avatars/avatar.png" Aspect="Fill" Margin="0"/>
+                </Frame>
+            </VerticalStackLayout>
+
+            <Grid Grid.Row="1" Margin="20,20,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Text="Bienvenue avec .Net Maui "  TextColor="Black" FontSize="20" FontAttributes="Italic" HorizontalOptions="Center"/>
+            </Grid>
+            
+           
+        </Grid>
+        
+    </ScrollView>
+ 
+    
+
+</ContentPage>

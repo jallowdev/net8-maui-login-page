@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="net8_mauiApp_loginPage.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:net8_mauiApp_loginPage.mvvm.views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False"
+    Title="">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:LoadingPage}"
+        Route="loading" />
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="login" />
+
+
+    <TabBar>
+        <Tab Title="Home" Icon="home">
+            <ShellContent 
+                Icon="home.svg"
+                Title="Home"
+                ContentTemplate="{DataTemplate local:HomePage}"    
+                Route="home"
+                />
+        </Tab>
+        <Tab Title="Settings" Icon="setting">
+            <ShellContent 
+               
+                Title="Setting"
+                ContentTemplate="{DataTemplate local:SettingsPage}"    
+                Route="setting"
+                />
+        </Tab>
+        
+        
+    </TabBar>
+    
+    
+
+</Shell>
